@@ -2,20 +2,12 @@
 
 // Composer: "fzaninotto/faker": "v1.3.0"
 // use Faker\Factory as Faker;
+use project\entities\Category;
 
 class CategoriesTableSeeder extends Seeder {
 
 	public function run()
 	{
-		// $faker = Faker::create();
-
-		// foreach(range(1, 10) as $index)
-		// {
-		// 	Category::create([
-
-		// 	]);
-		// }
-
 		Category::create([
 			'id' => 1,
 			'name' => 'Backend',

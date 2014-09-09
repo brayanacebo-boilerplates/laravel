@@ -2,6 +2,8 @@
 
 // Composer: "fzaninotto/faker": "v1.3.0"
 use Faker\Factory as Faker;
+use project\entities\Candidate;
+use project\entities\User;
 
 class CandidatesTableSeeder extends Seeder {
 

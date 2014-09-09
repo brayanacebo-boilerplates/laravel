@@ -21,6 +21,10 @@ Pendiente
 
 Recomendamos siempre que usted desee hacer un nuevo proyecto bajar nuevamente el proyecto para que cuente con las actualizaciones que se estarán haciendo continuamente.
 
+## Ayuda
+
+* [Generadores de Way](https://dl.dropboxusercontent.com/u/774859/Work/Laravel-4-Generators/Get-Started-With-Laravel-Custom-Generators.mp4)
+
 ## Bugs
 
 * [Issue tracker](https://github.com/all-boilerplates/pyro-v2/issues/new)

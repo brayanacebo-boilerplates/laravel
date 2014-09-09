@@ -23,7 +23,14 @@ Recomendamos siempre que usted desee hacer un nuevo proyecto bajar nuevamente el
 
 ## Ayuda
 
-* [Generadores de Way](https://dl.dropboxusercontent.com/u/774859/Work/Laravel-4-Generators/Get-Started-With-Laravel-Custom-Generators.mp4)
+### Generadores de Jeffrey Way
+
+* [GitHub](https://github.com/JeffreyWay/Laravel-4-Generators#resources)
+* [Video](https://dl.dropboxusercontent.com/u/774859/Work/Laravel-4-Generators/Get-Started-With-Laravel-Custom-Generators.mp4)
+
+### Paquetes
+
+Paquetes existentes [Aqui](https://packagist.org)
 
 ## Bugs
 

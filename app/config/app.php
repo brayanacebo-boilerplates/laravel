@@ -52,7 +52,7 @@ return array(
 	|
 	*/
 
-	'locale' => 'en',
+	'locale' => 'es',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -78,9 +78,7 @@ return array(
 	|
 	*/
 
-	'key' => 'BYhG2f9Fho91oJeBGWxVrJYJt7rnV7fR',
-
-	'cipher' => MCRYPT_RIJNDAEL_128,
+	'key' => 'YourSecretKey!!!',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -121,7 +119,13 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-		'Way\Generators\GeneratorsServiceProvider'
+
+        // Vendor
+        'Way\Generators\GeneratorsServiceProvider',
+        'Barryvdh\Debugbar\ServiceProvider',
+
+        // Custom
+        'HireMe\Components\FieldServiceProvider'
 	),
 
 	/*
@@ -182,12 +186,15 @@ return array(
 		'Schema'          => 'Illuminate\Support\Facades\Schema',
 		'Seeder'          => 'Illuminate\Database\Seeder',
 		'Session'         => 'Illuminate\Support\Facades\Session',
-		'SoftDeletingTrait' => 'Illuminate\Database\Eloquent\SoftDeletingTrait',
 		'SSH'             => 'Illuminate\Support\Facades\SSH',
 		'Str'             => 'Illuminate\Support\Str',
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
-		'View'            => 'Illuminate\Support\Facades\View'
+		'View'            => 'Illuminate\Support\Facades\View',
+
+        // Custom
+
+        'Field'           => 'HireMe\Components\Field'
 	),
 
 );

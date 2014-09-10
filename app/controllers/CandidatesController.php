@@ -1,35 +1,36 @@
 <?php
 
-use project\repositories\CategoryRepository;
-use project\entities\Category;
-use project\entities\Candidate;
+use HireMe\Repositories\CategoryRepo;
+use HireMe\Repositories\CandidateRepo;
 
 class CandidatesController extends BaseController {
 
-	protected $categoryRepository;
+    protected $categoryRepo;
+    protected $candidateRepo;
 
-	public function __construct(CategoryRepository $categoryRepository)
-	{
-		$this->categoryRepository = $categoryRepository;
-	}
+    public function __construct(CategoryRepo $categoryRepo,
+                                CandidateRepo $candidateRepo)
+    {
+        $this->categoryRepo = $categoryRepo;
+        $this->candidateRepo = $candidateRepo;
+    }
 
-	public function category($slug, $id)
-	{
+    public function category($slug, $id)
+    {
+        $category = $this->categoryRepo->find($id);
 
-		$category = Category::find($id)->candidates;
+        $this->notFoundUnless($category);
 
-		// $category = $this->categoryRepository->find($id);
+        return View::make('candidates/category', compact('category'));
+    }
 
-		// $x = $category->candidates;
+    public function show($slug, $id)
+    {
+        $candidate = $this->candidateRepo->find($id);
 
-		// $queries = DB::getQueryLog();
-		// $last_query = end($queries);
+        $this->notFoundUnless($candidate);
 
-		echo '<pre>';
-		echo var_dump($category);
-		die;
+        return View::make('candidates/show', compact('candidate'));
+    }
 
-		return View::make('candidates/category', compact('category'));
-	}
-
-}
+} 

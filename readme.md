@@ -15,11 +15,29 @@ Si usted desea colaborar por favor comuníquese con el equipo internamente.
 
 ## Instalación
 
-Pendiente
+Una vez clonado el proyecto en su computador, cree con mysql una base de datos por ejemplo llamada "laravel" y no olvide configurar sus datos en config/database.php.
+
+Luego abra la terminal y parado en el proyecto ejecute
+
+```
+composer install
+```
+
+Y por ultimo 
+
+```
+php artisan db:seed
+```
 
 ## Actualizar
 
 Recomendamos siempre que usted desee hacer un nuevo proyecto bajar nuevamente el proyecto para que cuente con las actualizaciones que se estarán haciendo continuamente.
+
+Ó si esta trabajando ya bajo una copia, haga pull de la rama respectiva (master) y ejecute
+
+```
+php artisan migrate:refresh --seed
+```
 
 ## Ayuda
 
